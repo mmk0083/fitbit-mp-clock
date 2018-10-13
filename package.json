@@ -1,0 +1,24 @@
+{
+  "fitbit": {
+    "appUUID": "c3bc3fdb-e42a-45d7-8525-15452d62bb65",
+    "appType": "clockface",
+    "appDisplayName": "Medical Professional",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_activity"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Medical Professional"
+      }
+    }
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~1.0.0"
+  }
+}

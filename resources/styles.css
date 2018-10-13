@@ -1,0 +1,33 @@
+.background { viewport-fill: #000000; fill: #00FFFF; }
+
+.clockColor { fill: #00FFFF; }
+
+.tick {
+  x1: 0;
+  x2: 0;
+  stroke-width: 4;
+  fill: inherit;
+  opacity: 0.3;
+}
+
+.major { opacity: 1; }
+
+.date {
+  x: 50%;
+  y: 60;
+  fill: inherit;
+  font-family: System-Bold;
+  font-size: 24;
+  text-anchor: middle;
+  text-length: 12;
+}
+
+.steps {
+  x: 50%+15;
+  y: 100%-40;
+  fill: inherit;
+  font-family: System-Bold;
+  font-size: 24;
+  text-anchor: middle;
+  text-length: 6;
+}
