@@ -5,13 +5,15 @@ import document from "document";
 import { inbox } from "file-transfer";
 import { vibration } from "haptics";
 import { today } from "user-activity";
-import { SETTINGS_KEYS, SETTINGS_NIGHT_COLOR } from "../common/constants";
+import { MINOR_COLORS, SETTINGS_KEYS, SETTINGS_NIGHT_COLOR } from "../common/constants";
 import * as analog from "./analog";
 import { monthNames } from "./dateUtils";
 import { loadSettings } from "./settingsUtils";
 
 // Element handles
 const background = document.getElementById("background");
+const dial = document.getElementById("dial");
+const dialMinor = document.getElementById("dialMinor");
 const dateDisplay = document.getElementById("dateDisplay");
 const stepsIcon = document.getElementById("stepsIcon");
 const stepsDisplay = document.getElementById("stepsDisplay");
@@ -40,6 +42,8 @@ const applySettings = (now) => {
   }
 
   background.style.fill = displayColor;
+  dial.style.fill = displayColor;
+  dialMinor.style.fill = MINOR_COLORS[displayColor];
 }
 
 // Handler to receive updated settings files
