@@ -21,6 +21,17 @@ export const SETTINGS_COLORS = [
 
 export const SETTINGS_NIGHT_COLOR = "#FF4500"; // orangered
 
+// Map to minor tick mark colors
+export const MINOR_COLORS = {
+  '#00FFFF': '#004D4D',
+  '#F80070': '#4A0022',
+  '#32CD32': '#0F3E0F',
+  '#FF7F50': '#4D2618',
+  '#FFE4B5': '#4D4436',
+  '#F0F8FF': '#484A4D',
+  '#FF4500': '#4D1500'
+};
+
 // Default settings
 export const SETTINGS_DEFAULTS = {
   [SETTINGS_KEYS.CLOCK_COLOR]: `"${SETTINGS_COLORS[0].color}"`,

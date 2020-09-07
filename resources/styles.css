@@ -2,15 +2,16 @@
 
 .clockColor { fill: #00FFFF; }
 
+.dial { fill: #00FFFF; }
+
+.dialMinor { fill: #004D4D; }
+
 .tick {
   x1: 0;
   x2: 0;
   stroke-width: 4;
   fill: inherit;
-  opacity: 0.3;
 }
-
-.major { opacity: 1; }
 
 .date {
   x: 50%;
